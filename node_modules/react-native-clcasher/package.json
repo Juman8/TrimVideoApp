@@ -1,0 +1,21 @@
+{
+  "name": "react-native-clcasher",
+  "version": "1.0.0",
+  "description": "clcasher",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/clcorpdevelopment/react-native-casher.git"
+  },
+  "keywords": [
+    "Cacher"
+  ],
+  "author": "Clcorp",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/clcorpdevelopment/react-native-casher#readme",
+  "dependencies": {
+    "mock-async-storage": "^1.0.3"
+  }
+}

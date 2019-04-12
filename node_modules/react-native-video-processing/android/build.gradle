@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion 25
+  buildToolsVersion "25.0.3"
+
+  defaultConfig {
+    minSdkVersion 16
+    targetSdkVersion 22
+    versionCode 1
+    versionName "1.0"
+    ndk {
+      abiFilters "armeabi-v7a", "x86"
+    }
+  }
+  lintOptions {
+    warning 'InvalidPackage'
+  }
+}
+
+configurations.all {
+  resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+
+dependencies {
+  compile 'com.facebook.react:react-native:+'
+  compile 'com.yqritc:android-scalablevideoview:1.0.4'
+  compile 'com.googlecode.mp4parser:isoparser:1.1.20'
+  compile 'com.github.wseemann:FFmpegMediaMetadataRetriever:1.0.14'
+}
+
+allprojects {
+  repositories {
+    mavenLocal()
+    jcenter()
+  }
+}
